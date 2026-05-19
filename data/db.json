@@ -1,0 +1,46 @@
+{
+  "campaigns": [
+    {
+      "id": "c1",
+      "platform": "Instagram",
+      "name": "Glasshouse Aesthetic Promo",
+      "budget": 15000,
+      "status": "Active",
+      "impressions": 84200,
+      "clicks": 4210,
+      "conversions": 310,
+      "ctr": 5,
+      "cpc": 3.5,
+      "spend": 14735,
+      "startDate": "2026-05-10"
+    },
+    {
+      "id": "c2",
+      "platform": "Google",
+      "name": "Sushi & Special Coffee Search Ads",
+      "budget": 20000,
+      "status": "Active",
+      "impressions": 32400,
+      "clicks": 1944,
+      "conversions": 120,
+      "ctr": 6,
+      "cpc": 6.2,
+      "spend": 12052,
+      "startDate": "2026-05-12"
+    },
+    {
+      "id": "c3",
+      "platform": "Facebook",
+      "name": "Weekend Dine-In Offers",
+      "budget": 10000,
+      "status": "Paused",
+      "impressions": 45000,
+      "clicks": 1350,
+      "conversions": 78,
+      "ctr": 3,
+      "cpc": 4.1,
+      "spend": 5535,
+      "startDate": "2026-05-01"
+    }
+  ]
+}
