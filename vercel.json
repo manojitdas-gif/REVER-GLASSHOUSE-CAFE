@@ -2,12 +2,6 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "env": {
-    "VITE_SUPABASE_URL": "https://ncuixngbrypmcqhypyjd.supabase.co",
-    "VITE_SUPABASE_ANON_KEY": "sb_publishable_XV2wU9UcnPm1QFjIMzS34A_-A8dXvAm",
-    "VITE_GOOGLE_CLIENT_ID": "1065078894672-rmp5kp8vfjns5rn9kp5psfp16g691043.apps.googleusercontent.com",
-    "VITE_GOOGLE_AUTH_PROXY": "https://designarena.ai/auth/google/callback"
-  },
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite"
