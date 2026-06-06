@@ -18,6 +18,7 @@ if (!fs.existsSync(DATA_DIR)) {
 const DB_FILE = path.join(DATA_DIR, 'db.json');
 const RESERVATIONS_FILE = path.join(DATA_DIR, 'reservations.json');
 const REVIEWS_FILE = path.join(DATA_DIR, 'reviews.json');
+const INTERESTS_FILE = path.join(DATA_DIR, 'interests.json');
 
 // Helper to initialize files if empty
 const initJSONFile = (filePath, defaultVal) => {
@@ -29,6 +30,7 @@ const initJSONFile = (filePath, defaultVal) => {
 initJSONFile(DB_FILE, {});
 initJSONFile(RESERVATIONS_FILE, []);
 initJSONFile(REVIEWS_FILE, []);
+initJSONFile(INTERESTS_FILE, []);
 
 const MIME_TYPES = {
   '.html': 'text/html',
@@ -164,6 +166,31 @@ const server = http.createServer((req, res) => {
       } catch (e) {
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: 'Failed to save review' }));
+      }
+    });
+    return;
+  }
+
+  // POST /api/interest
+  if (pathname === '/api/interest' && req.method === 'POST') {
+    let body = '';
+    req.on('data', chunk => { body += chunk; });
+    req.on('end', () => {
+      try {
+        const newInterest = JSON.parse(body);
+        const interests = JSON.parse(fs.readFileSync(INTERESTS_FILE, 'utf8') || '[]');
+        
+        newInterest.id = newInterest.id || Math.random().toString(36).substr(2, 9);
+        newInterest.created_at = newInterest.created_at || new Date().toISOString();
+        interests.unshift(newInterest);
+        
+        fs.writeFileSync(INTERESTS_FILE, JSON.stringify(interests, null, 2), 'utf8');
+        
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ success: true, interest: newInterest }));
+      } catch (e) {
+        res.writeHead(500, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: 'Failed to save interest submission' }));
       }
     });
     return;
