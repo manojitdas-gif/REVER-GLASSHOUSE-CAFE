@@ -2256,8 +2256,8 @@ const Home = () => {
 
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16 }}>
                     <div>
-                      <label style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', marginBottom: 8, display: 'block', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Website URL / Domain *</label>
-                      <input type="url" className="form-input" placeholder="e.g. https://yourcompany.com" required value={form.websiteUrl} onChange={e => setForm({ ...form, websiteUrl: e.target.value })} />
+                      <label style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', marginBottom: 8, display: 'block', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Website URL / Domain</label>
+                      <input type="url" className="form-input" placeholder="e.g. https://yourcompany.com" value={form.websiteUrl} onChange={e => setForm({ ...form, websiteUrl: e.target.value })} />
                     </div>
                     <div>
                       <label style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', marginBottom: 8, display: 'block', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Service of Interest *</label>
@@ -3518,8 +3518,8 @@ const ServicesPage = () => {
                       <input type="text" className="form-input" placeholder="e.g. Growthlytics" required value={contactForm.companyName} onChange={e => setContactForm({ ...contactForm, companyName: e.target.value })} />
                     </div>
                     <div>
-                      <label style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.5)', marginBottom: 8, display: 'block', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Website URL *</label>
-                      <input type="url" className="form-input" placeholder="e.g. https://yourcompany.com" required value={contactForm.websiteUrl} onChange={e => setContactForm({ ...contactForm, websiteUrl: e.target.value })} />
+                      <label style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.5)', marginBottom: 8, display: 'block', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Website URL</label>
+                      <input type="url" className="form-input" placeholder="e.g. https://yourcompany.com" value={contactForm.websiteUrl} onChange={e => setContactForm({ ...contactForm, websiteUrl: e.target.value })} />
                     </div>
                   </div>
 
