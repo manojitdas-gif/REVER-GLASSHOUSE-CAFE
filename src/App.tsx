@@ -2238,8 +2238,8 @@ const Home = () => {
                       <input type="text" className="form-input" placeholder="e.g. Priyesh Mukherjee" required value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} />
                     </div>
                     <div>
-                      <label style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', marginBottom: 8, display: 'block', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Company Name *</label>
-                      <input type="text" className="form-input" placeholder="e.g. Growthlytics" required value={form.companyName} onChange={e => setForm({ ...form, companyName: e.target.value })} />
+                      <label style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', marginBottom: 8, display: 'block', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Company Name</label>
+                      <input type="text" className="form-input" placeholder="e.g. Growthlytics" value={form.companyName} onChange={e => setForm({ ...form, companyName: e.target.value })} />
                     </div>
                   </div>
 
@@ -3514,8 +3514,8 @@ const ServicesPage = () => {
 
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16 }}>
                     <div>
-                      <label style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.5)', marginBottom: 8, display: 'block', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Company Name *</label>
-                      <input type="text" className="form-input" placeholder="e.g. Growthlytics" required value={contactForm.companyName} onChange={e => setContactForm({ ...contactForm, companyName: e.target.value })} />
+                      <label style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.5)', marginBottom: 8, display: 'block', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Company Name</label>
+                      <input type="text" className="form-input" placeholder="e.g. Growthlytics" value={contactForm.companyName} onChange={e => setContactForm({ ...contactForm, companyName: e.target.value })} />
                     </div>
                     <div>
                       <label style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.5)', marginBottom: 8, display: 'block', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Website URL</label>
