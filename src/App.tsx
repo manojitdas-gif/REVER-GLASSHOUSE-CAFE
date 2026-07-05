@@ -550,6 +550,45 @@ const ScrollToTop = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
+
+    // Dynamic SEO title & description injection
+    let title = "Growthlytics | AI Marketing, SEO & Automation Agency India";
+    let desc = "Growthlytics helps startups and businesses grow with AI-powered digital marketing, SEO, AI automation, web development, Google Ads, Meta Ads, LinkedIn strategy, and content marketing across India.";
+
+    if (pathname === '/about') {
+      title = "About Us | Growthlytics - AI Marketing, SEO & Automation Agency India";
+      desc = "We are an ROI-focused growth engineering team bypassing traditional agency structures. We build high-performance web systems and AI automations you own 100%.";
+    } else if (pathname === '/portfolio') {
+      title = "Case Studies & Audited Results | Growthlytics";
+      desc = "Read real, audited case studies of how we scaled traffic, conversion rates, and ROAS using technical growth frameworks and code ownership.";
+    } else if (pathname === '/blogs') {
+      title = "Technical Growth & Marketing Blogs | Growthlytics";
+      desc = "Deep-dives into server-side GTM containers, advanced search engine mapping, paid advertising mathematics, and custom AI content pipelines.";
+    } else if (pathname === '/services') {
+      title = "Growth & Automation Services | Growthlytics India";
+      desc = "Explore our core services: AI automation, Web Development, SEO, Paid Ads, LinkedIn B2B marketing, and Social Media strategies.";
+    } else if (pathname.startsWith('/service/')) {
+      const slug = pathname.replace('/service/', '');
+      const svc = SERVICES.find(s => s.slug === slug);
+      if (svc) {
+        title = `${svc.title} Services Kolkata & India | Growthlytics`;
+        desc = svc.desc;
+      }
+    } else if (pathname === '/privacy-policy') {
+      title = "Privacy Policy | Growthlytics";
+      desc = "At Growthlytics, we value your privacy. Read our terms regarding data confidentiality, applicant CVs, and database record storage.";
+    }
+
+    document.title = title;
+    
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', desc);
+    
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', title);
+    
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', desc);
   }, [pathname, hash]);
   return null;
 };
