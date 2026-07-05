@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { sendLeadEmails } from './emailService';
-import { BrowserRouter, Routes, Route, Link, useNavigate, useParams, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, useNavigate, useParams, useLocation, Navigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ArrowLeft, ArrowRight, Search, Menu, X, Zap, BookOpen, TrendingUp, CheckCircle, 
@@ -3771,6 +3771,25 @@ export default function App() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/service/:serviceId" element={<ServiceDetail />} />
+
+            {/* Recommended SEO Strategy Landing Page Redirects */}
+            <Route path="/seo-services" element={<Navigate to="/service/seo-optimization" replace />} />
+            <Route path="/ai-seo-services" element={<Navigate to="/service/seo-optimization" replace />} />
+            <Route path="/website-development" element={<Navigate to="/service/website-development" replace />} />
+            <Route path="/digital-marketing" element={<Navigate to="/services" replace />} />
+            <Route path="/google-ads" element={<Navigate to="/service/google-ads-ppc" replace />} />
+            <Route path="/meta-ads" element={<Navigate to="/service/meta-business-suite" replace />} />
+            <Route path="/linkedin-marketing" element={<Navigate to="/service/social-media-marketing" replace />} />
+            <Route path="/content-marketing" element={<Navigate to="/service/content-strategy" replace />} />
+            <Route path="/ai-content" element={<Navigate to="/service/content-strategy" replace />} />
+            <Route path="/ai-automation" element={<Navigate to="/service/ai-app-development" replace />} />
+            <Route path="/social-media-marketing" element={<Navigate to="/service/social-media-marketing" replace />} />
+            <Route path="/saas-marketing" element={<Navigate to="/services" replace />} />
+            <Route path="/growth-marketing" element={<Navigate to="/services" replace />} />
+            <Route path="/local-seo" element={<Navigate to="/service/seo-optimization" replace />} />
+            <Route path="/blog" element={<Navigate to="/blogs" replace />} />
+            <Route path="/contact" element={<Navigate to="/" replace />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
