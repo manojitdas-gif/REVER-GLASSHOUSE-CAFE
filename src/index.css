@@ -155,7 +155,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/images/3d/neural_network_bg.png');
+  background-image: url('/images/3d/neural_network_bg.webp');
   background-size: cover;
   background-position: center;
   opacity: 0.08;
@@ -283,7 +283,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/images/3d/cyber_grid_bg.png');
+  background-image: url('/images/3d/cyber_grid_bg.webp');
   background-size: cover;
   background-position: center;
   opacity: 0.07;

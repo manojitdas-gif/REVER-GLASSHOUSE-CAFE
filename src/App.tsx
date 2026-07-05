@@ -95,7 +95,7 @@ const SERVICES: Service[] = [
     desc: "Achieve dominant, sustainable search engine visibility through our technical audit frameworks, comprehensive intent-focused keyword mapping, semantic topical clustering, and high-authority link acquisition campaigns that convert searches into qualified customers.",
     color: "#06B6D4",
     slug: "seo-optimization",
-    img: "/images/3d/services_seo_detail.png",
+    img: "/images/3d/services_seo_detail.webp",
     features: ['Technical Core Web Vitals & Crawlability Audits', 'Local SEO & SEO Company Kolkata Target Mapping', 'AI SEO Clustering (SaaS SEO & Enterprise SEO)', 'GEO (Generative Engine Optimization) & AEO Setup']
   },
   {
@@ -104,7 +104,7 @@ const SERVICES: Service[] = [
     desc: "Design and deploy cutting-edge artificial intelligence systems using custom Large Language Model (LLM) agents, semantic vector databases, and retrieval-augmented generation (RAG) frameworks to automate repetitive workflows and create intelligent user experiences.",
     color: "#7C3AED",
     slug: "ai-app-development",
-    img: "/images/3d/services_ai_detail.png",
+    img: "/images/3d/services_ai_detail.webp",
     features: ['AI Automation Services & LLM Integrations', 'Workflow & CRM Automation (WhatsApp Automation)', 'Semantic Search Systems & Vector Databases', 'AI Chatbots with Context Retrieval (AI Content Creation)']
   },
   {
@@ -113,7 +113,7 @@ const SERVICES: Service[] = [
     desc: "Develop hyper-performant, responsive frontends and secure backends using modern architectures like React, Next.js, and Vite, meticulously optimized for rapid load times, conversion-rate optimization (CRO), and seamless mobile adaptability.",
     color: "#3B82F6",
     slug: "website-development",
-    img: "/images/3d/services_web_detail.png",
+    img: "/images/3d/services_web_detail.webp",
     features: ['Website Development Company Kolkata Specialists', 'Responsive Website Design & Fluid Aesthetics', 'WordPress, Shopify & Custom Ecommerce Development', 'Core Web Vitals Optimization (99+ Lighthouse Scores)']
   },
   {
@@ -122,7 +122,7 @@ const SERVICES: Service[] = [
     desc: "Formulate organic growth loops and creative social structures across Meta, TikTok, and LinkedIn, focusing on high-retention short-form video content, viral hooks, community nurturing, and multi-channel marketing campaigns.",
     color: "#10B981",
     slug: "social-media-marketing",
-    img: "/images/3d/services_social_detail.png",
+    img: "/images/3d/services_social_detail.webp",
     features: ['Meta Ads Kolkata & Reels Marketing Setup', 'LinkedIn Marketing Kolkata & Social Media Marketing', 'Active Organic Community Engagement & Growth Strategies', 'LinkedIn B2B Marketing & Founder Branding Pipelines']
   },
   {
@@ -131,7 +131,7 @@ const SERVICES: Service[] = [
     desc: "Convert fragmented spreadsheets and databases into clean, automated pipeline architectures, creating interactive custom business intelligence dashboards, financial projection templates, and advanced SQL data analysis views.",
     color: "#059669",
     slug: "excel-data-analytics",
-    img: "/images/3d/services_analytics_detail.png",
+    img: "/images/3d/services_analytics_detail.webp",
     features: ['Advanced Excel Models, VBA macros, & Custom Formulas', 'Automated SQL Pipeline Construction & Database Linking', 'Custom Business Intelligence (Looker Studio, PowerBI) Setups', 'Predictive Modeling Sheets for Corporate Growth Metrics']
   },
   {
@@ -140,7 +140,7 @@ const SERVICES: Service[] = [
     desc: "Maximize acquisition performance and lower CAC using data-backed Google PPC search, display, performance max, and YouTube video ads, featuring continuous audience exclusions, strict negative keywords, and copy variations.",
     color: "#F59E0B",
     slug: "google-ads-ppc",
-    img: "/images/3d/seo_growth.png",
+    img: "/images/3d/seo_growth.webp",
     features: ['Google Ads Kolkata & PPC Search Engine Campaigns', 'Performance Max (PMax) & Google Ads Management Services', 'Targeted B2B & D2C Search & Display Campaigns', 'Negative Keyword Auditing & Budget Efficiency Monitoring']
   },
   {
@@ -149,7 +149,7 @@ const SERVICES: Service[] = [
     desc: "Establish total coordination of your Meta Business Manager ecosystem, creating unified messaging networks, pixel tracking layers, Conversions API (CAPI) infrastructure, and catalog synchronizations for scaling.",
     color: "#4F46E5",
     slug: "meta-business-suite",
-    img: "/images/3d/social_media.png",
+    img: "/images/3d/social_media.webp",
     features: ['Unified Messaging Inbox & Auto-response Deployments', 'Meta Conversions API (CAPI) Server-Side Integrations', 'E-commerce Catalog Synchronization & Asset Structuring', 'Meta Pixel Auditing & Account Security Configuration']
   },
   {
@@ -158,7 +158,7 @@ const SERVICES: Service[] = [
     desc: "Develop cohesive brand narrative frameworks, producing conversion-optimized copywriting, authoritative blog clusters, monthly newsletters, and landing pages that move prospects effortlessly through the sales funnel.",
     color: "#EF4444",
     slug: "content-strategy",
-    img: "/images/3d/team_workflow.png",
+    img: "/images/3d/team_workflow.webp",
     features: ['AI Content Creation Services & Blog Strategies', 'AI Copywriting for High-Converting Landing Pages', 'Content Marketing & Automated Email Newsletters', 'Detailed Brand Voice Guidelines & Editorial Maps']
   }
 ];
@@ -606,7 +606,7 @@ const TiltImage3D = ({ src, alt, height = 380, glow = '#7C3AED', floatDelay = '0
         animation: `float3d 6s ease-in-out infinite`,
         animationDelay: floatDelay,
       }}>
-        <img src={src} alt={alt} style={{ width: '100%', height, objectFit: 'cover', display: 'block' }} />
+        <img src={src} alt={alt} loading="lazy" style={{ width: '100%', height, objectFit: 'cover', display: 'block' }} />
         <div style={{
           position: 'absolute', inset: 0,
           background: `linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 60%, rgba(255,255,255,0.02) 100%)`,
@@ -891,7 +891,7 @@ const Navbar = () => {
           <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 12, perspective: 1000 }}>
             <div className="logo-float" style={{ display: 'flex', alignItems: 'center' }}>
               <motion.img 
-                src="/images/logo.jpg" 
+                src="/images/logo.webp" 
                 alt="Growthlytics Logo" 
                 style={{ 
                   width: 55, 
@@ -1003,7 +1003,7 @@ const Footer = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 20, perspective: 1000 }}>
               <div className="logo-float" style={{ display: 'flex', alignItems: 'center' }}>
                 <motion.img 
-                  src="/images/logo.jpg" 
+                  src="/images/logo.webp" 
                   alt="Growthlytics Logo" 
                   style={{ 
                     width: 50, 
@@ -1457,14 +1457,14 @@ const HERO_SLIDES = [
     ctaLink: "#book-demo",
     secondaryCtaText: "View Portfolio",
     secondaryCtaLink: "#portfolio",
-    image: "/images/3d/hero_dashboard.png",
+    image: "/images/3d/hero_dashboard.webp",
     glow: "#7C3AED",
     chips: [
       { label: '↑ 80% Traffic', color: '#06B6D4', top: '10%', left: '-8%', delay: '0.6s' },
       { label: '3.2x ROAS', color: '#7C3AED', bottom: '15%', right: '-6%', delay: '1.2s' },
       { label: 'Growth Marketing Agency India', color: '#10B981', top: '60%', left: '-12%', delay: '0.9s' }
     ],
-    bgPoster: "/images/3d/cyber_grid_bg.png"
+    bgPoster: "/images/3d/cyber_grid_bg.webp"
   },
   {
     label: "AI Automation Protocol // Active",
@@ -1480,14 +1480,14 @@ const HERO_SLIDES = [
     ctaLink: "#services",
     secondaryCtaText: "Our Onboarding timeline",
     secondaryCtaLink: "#methodology",
-    image: "/images/3d/ai_brain.png",
+    image: "/images/3d/ai_brain.webp",
     glow: "#06B6D4",
     chips: [
       { label: 'AI Indexing', color: '#06B6D4', top: '12%', right: '-8%', delay: '0.5s' },
       { label: 'Vector Stores', color: '#EC4899', bottom: '18%', left: '-10%', delay: '1.0s' },
       { label: 'LLM Pipelines', color: '#8B5CF6', top: '55%', right: '-12%', delay: '0.8s' }
     ],
-    bgPoster: "/images/3d/neural_network_bg.png"
+    bgPoster: "/images/3d/neural_network_bg.webp"
   },
   {
     label: "Server-Side Pixels & attribution",
@@ -1503,14 +1503,14 @@ const HERO_SLIDES = [
     ctaLink: "#book-demo",
     secondaryCtaText: "View Case Studies",
     secondaryCtaLink: "#portfolio",
-    image: "/images/3d/analytics_pipeline.png",
+    image: "/images/3d/analytics_pipeline.webp",
     glow: "#10B981",
     chips: [
       { label: '+45% Revenue', color: '#10B981', top: '8%', left: '-5%', delay: '0.4s' },
       { label: '88% Match Rate', color: '#06B6D4', bottom: '22%', right: '-10%', delay: '1.1s' },
       { label: 'Zero Data Leak', color: '#7C3AED', top: '62%', left: '-8%', delay: '0.7s' }
     ],
-    bgPoster: "/images/3d/cyber_grid_bg.png"
+    bgPoster: "/images/3d/cyber_grid_bg.webp"
   },
   {
     label: "Zero Slide Decks // Production Code",
@@ -1526,14 +1526,14 @@ const HERO_SLIDES = [
     ctaLink: "#faq",
     secondaryCtaText: "Meet Core Builders",
     secondaryCtaLink: "/services",
-    image: "/images/3d/website_mockup.png",
+    image: "/images/3d/website_mockup.webp",
     glow: "#EC4899",
     chips: [
       { label: '100% Source Code', color: '#EC4899', top: '15%', right: '-5%', delay: '0.6s' },
       { label: 'No Vendor Lock', color: '#7C3AED', bottom: '15%', left: '-8%', delay: '1.3s' },
       { label: 'Next.js Dev', color: '#06B6D4', top: '58%', right: '-8%', delay: '0.9s' }
     ],
-    bgPoster: "/images/3d/neural_network_bg.png"
+    bgPoster: "/images/3d/neural_network_bg.webp"
   }
 ];
 
@@ -1775,7 +1775,7 @@ const Home = () => {
       <section style={{ padding: '0 5% 60px', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
         <div className="bg-motion-3d" style={{
           position: 'absolute', inset: 0,
-          backgroundImage: "url('/images/3d/neural_network_bg.png')",
+          backgroundImage: "url('/images/3d/neural_network_bg.webp')",
           backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.16, pointerEvents: 'none'
         }} />
         <div className="glass" style={{ maxWidth: 1280, margin: '0 auto', borderRadius: 28, padding: '40px 32px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 32, position: 'relative', overflow: 'hidden' }}>
@@ -1790,7 +1790,7 @@ const Home = () => {
       <section id="services" ref={servicesRef} className="reveal" style={{ padding: '100px 5%', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
         <div className="bg-motion-3d" style={{
           position: 'absolute', inset: 0,
-          backgroundImage: "url('/images/3d/cyber_grid_bg.png')",
+          backgroundImage: "url('/images/3d/cyber_grid_bg.webp')",
           backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.18, mixBlendMode: 'screen', pointerEvents: 'none'
         }} />
         <div style={{ maxWidth: 1280, margin: '0 auto', position: 'relative', zIndex: 1 }}>
@@ -1854,7 +1854,7 @@ const Home = () => {
       <section id="portfolio" ref={portfolioRef} className="reveal" style={{ padding: '100px 5%', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
         <div className="bg-motion-3d" style={{
           position: 'absolute', inset: 0,
-          backgroundImage: "url('/images/3d/neural_network_bg.png')",
+          backgroundImage: "url('/images/3d/neural_network_bg.webp')",
           backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.16, pointerEvents: 'none'
         }} />
         <div style={{ maxWidth: 1280, margin: '0 auto', position: 'relative', zIndex: 1 }}>
@@ -1871,7 +1871,7 @@ const Home = () => {
 
           {/* Large Results metrics render before grid */}
           <div style={{ marginBottom: 40, border: '1px solid rgba(255,255,255,0.06)', borderRadius: 28, overflow: 'hidden' }}>
-            <TiltImage3D src="/images/3d/results_metrics.png" alt="Growth metrics overview" height={360} glow="#06B6D4" />
+            <TiltImage3D src="/images/3d/results_metrics.webp" alt="Growth metrics overview" height={360} glow="#06B6D4" />
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 32 }}>
@@ -1967,7 +1967,7 @@ const Home = () => {
       <section id="methodology" ref={methodologyRef} className="reveal" style={{ padding: '100px 5%', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
         <div className="bg-motion-3d" style={{
           position: 'absolute', inset: 0,
-          backgroundImage: "url('/images/3d/cyber_grid_bg.png')",
+          backgroundImage: "url('/images/3d/cyber_grid_bg.webp')",
           backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.18, pointerEvents: 'none'
         }} />
         <div style={{ maxWidth: 1280, margin: '0 auto', position: 'relative', zIndex: 1 }}>
@@ -2013,7 +2013,7 @@ const Home = () => {
 
             {/* Right 3D Image Column */}
             <div>
-              <TiltImage3D src="/images/3d/sprint_methodology.png" alt="Methodology Roadmap 3D" height={440} glow="#7C3AED" />
+              <TiltImage3D src="/images/3d/sprint_methodology.webp" alt="Methodology Roadmap 3D" height={440} glow="#7C3AED" />
             </div>
           </div>
         </div>
@@ -2023,7 +2023,7 @@ const Home = () => {
       <section style={{ padding: '100px 5%', position: 'relative', zIndex: 1 }}>
         <div style={{ maxWidth: 1280, margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.1fr', gap: 60, alignItems: 'center' }} className="about-grid-split">
-            <TiltImage3D src="/images/3d/careers_workspace.png" alt="Growth Workflows 3D" height={400} glow="#06B6D4" />
+            <TiltImage3D src="/images/3d/careers_workspace.webp" alt="Growth Workflows 3D" height={400} glow="#06B6D4" />
             
             <div>
               <div className="section-label">Why Growthlytics</div>
@@ -2065,7 +2065,7 @@ const Home = () => {
       <section style={{ padding: '100px 5%', position: 'relative', zIndex: 1, background: 'rgba(10,10,20,0.2)', overflow: 'hidden' }}>
         <div className="bg-motion-3d" style={{
           position: 'absolute', inset: 0,
-          backgroundImage: "url('/images/3d/cyber_grid_bg.png')",
+          backgroundImage: "url('/images/3d/cyber_grid_bg.webp')",
           backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.03, pointerEvents: 'none'
         }} />
         <div style={{ maxWidth: 1280, margin: '0 auto', position: 'relative', zIndex: 1 }}>
@@ -2101,7 +2101,7 @@ const Home = () => {
 
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <div style={{ width: '100%', maxWidth: 360 }}>
-                <TiltImage3D src="/images/3d/problem_solving.png" alt="Collaborative Growth Workflow" height={420} glow="#06B6D4" />
+                <TiltImage3D src="/images/3d/problem_solving.webp" alt="Collaborative Growth Workflow" height={420} glow="#06B6D4" />
               </div>
             </div>
           </div>
@@ -2112,7 +2112,7 @@ const Home = () => {
       <section id="faq" ref={faqRef} className="reveal" style={{ padding: '100px 5%', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
         <div className="bg-motion-3d" style={{
           position: 'absolute', inset: 0,
-          backgroundImage: "url('/images/3d/neural_network_bg.png')",
+          backgroundImage: "url('/images/3d/neural_network_bg.webp')",
           backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.16, pointerEvents: 'none'
         }} />
         <div style={{ maxWidth: 1280, margin: '0 auto', position: 'relative', zIndex: 1 }}>
@@ -2126,7 +2126,7 @@ const Home = () => {
               <p style={{ color: 'rgba(255,255,255,0.5)', lineHeight: 1.7, fontSize: '0.95rem', marginBottom: 32 }}>
                 Find detailed answers to common inquiries about our performance marketing frameworks, custom AI software deliverables, and data onboarding methods.
               </p>
-              <TiltImage3D src="/images/3d/faq_support.png" alt="FAQ Support 3D" height={360} glow="#06B6D4" />
+              <TiltImage3D src="/images/3d/faq_support.webp" alt="FAQ Support 3D" height={360} glow="#06B6D4" />
             </div>
 
             {/* Right Column: FAQ Accordion */}
@@ -2216,7 +2216,7 @@ const Home = () => {
       <section id="book-demo" style={{ padding: '100px 5% 120px', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
         <div className="bg-motion-3d" style={{
           position: 'absolute', inset: 0,
-          backgroundImage: "url('/images/3d/cyber_grid_bg.png')",
+          backgroundImage: "url('/images/3d/cyber_grid_bg.webp')",
           backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.18, pointerEvents: 'none'
         }} />
         <div style={{ maxWidth: 1280, margin: '0 auto', position: 'relative', zIndex: 1 }}>
@@ -2249,7 +2249,7 @@ const Home = () => {
                 ))}
               </div>
 
-              <TiltImage3D src="/images/3d/contact_globe.png" alt="Globe Connectivity 3D" height={320} glow="#06B6D4" />
+              <TiltImage3D src="/images/3d/contact_globe.webp" alt="Globe Connectivity 3D" height={320} glow="#06B6D4" />
             </div>
 
             <div className="glass" style={{ padding: 40, borderRadius: 28, border: '1px solid rgba(255,255,255,0.08)' }}>
@@ -2410,7 +2410,7 @@ const ServiceDetail = () => {
     <div style={{ minHeight: '100vh', padding: '140px 5% 80px', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
       <div className="bg-motion-3d" style={{
         position: 'absolute', inset: 0,
-        backgroundImage: "url('/images/3d/cyber_grid_bg.png')",
+        backgroundImage: "url('/images/3d/cyber_grid_bg.webp')",
         backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.18, pointerEvents: 'none',
         zIndex: 0
       }} />
@@ -2541,7 +2541,7 @@ const AboutUs = () => {
     <div style={{ minHeight: '100vh', padding: '140px 5% 80px', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
       <div className="bg-motion-3d" style={{
         position: 'absolute', inset: 0,
-        backgroundImage: "url('/images/3d/neural_network_bg.png')",
+        backgroundImage: "url('/images/3d/neural_network_bg.webp')",
         backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.16, pointerEvents: 'none',
         zIndex: 0
       }} />
@@ -2563,7 +2563,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div style={{ transform: `translate(${mouse.x * 0.1}px, ${mouse.y * 0.1}px)`, transition: 'transform 0.2s ease-out' }}>
-            <TiltImage3D src="/images/3d/code_ownership.png" alt="Collaborative Growth Workflow" height={380} glow="#06B6D4" />
+            <TiltImage3D src="/images/3d/code_ownership.webp" alt="Collaborative Growth Workflow" height={380} glow="#06B6D4" />
           </div>
         </div>
 
@@ -2715,7 +2715,7 @@ const AboutUs = () => {
                 </div>
               </div>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <TiltImage3D src="/images/3d/manifesto_document.png" alt="Collaborative Growth Workflow" height={360} glow="#7C3AED" />
+                <TiltImage3D src="/images/3d/manifesto_document.webp" alt="Collaborative Growth Workflow" height={360} glow="#7C3AED" />
               </div>
             </div>
           </div>
@@ -2766,7 +2766,7 @@ const PortfolioPage = () => {
     <div style={{ minHeight: '100vh', padding: '140px 5% 80px', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
       <div className="bg-motion-3d" style={{
         position: 'absolute', inset: 0,
-        backgroundImage: "url('/images/3d/cyber_grid_bg.png')",
+        backgroundImage: "url('/images/3d/cyber_grid_bg.webp')",
         backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.18, pointerEvents: 'none',
         zIndex: 0
       }} />
@@ -2960,7 +2960,7 @@ const BlogsPage = () => {
     <div style={{ minHeight: '100vh', padding: '140px 5% 80px', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
       <div className="bg-motion-3d" style={{
         position: 'absolute', inset: 0,
-        backgroundImage: "url('/images/3d/neural_network_bg.png')",
+        backgroundImage: "url('/images/3d/neural_network_bg.webp')",
         backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.16, pointerEvents: 'none',
         zIndex: 0
       }} />
@@ -3094,7 +3094,7 @@ const SERVICE_DETAIL_DATA = [
     tagline: 'Rank Higher. Convert Better. Grow Faster.',
     color: '#06B6D4',
     glow: 'rgba(6,182,212,0.25)',
-    img: '/images/3d/services_seo_detail.png',
+    img: '/images/3d/services_seo_detail.webp',
     overview: 'Our SEO strategy is not about shortcuts — it is about building durable authority. We combine technical site health audits, laser-focused keyword intelligence, deep semantic content clustering, and authoritative white-hat link acquisition to engineer sustainable first-page dominance that compounds month after month.',
     process: [
       { step: '01', title: 'Technical Audit', desc: 'Full crawl of your site: Core Web Vitals, indexability, schema markup, canonical errors, page speed bottlenecks, and mobile UX issues.' },
@@ -3114,7 +3114,7 @@ const SERVICE_DETAIL_DATA = [
     tagline: 'Automate Decision Making. Scale With AI Intelligence.',
     color: '#7C3AED',
     glow: 'rgba(124,58,237,0.25)',
-    img: '/images/3d/services_ai_detail.png',
+    img: '/images/3d/services_ai_detail.webp',
     overview: 'We build and deploy enterprise-grade AI integrations that help your business grow using AI decision making, autonomous process automation, and cognitive agents. By combining generative models with your internal databases, we create workflows that qualify leads, automate support channels, forecast metrics, and make smart operational decisions in real-time.',
     process: [
       { step: '01', title: 'Workflow & Decision Audit', desc: 'We audit your existing processes to map where manual bottlenecks exist and where AI decision-making models can scale speed and accuracy.' },
@@ -3134,7 +3134,7 @@ const SERVICE_DETAIL_DATA = [
     tagline: 'Built for Performance. Designed for Conversion.',
     color: '#3B82F6',
     glow: 'rgba(59,130,246,0.25)',
-    img: '/images/3d/services_web_detail.png',
+    img: '/images/3d/services_web_detail.webp',
     overview: 'We engineer hyper-performant websites and web applications using modern frameworks like React, Next.js, and Vite — meticulously optimized for 99+ Lighthouse scores, lightning-fast load times, and conversion-rate maximization. Every pixel is intentional; every interaction is crafted to move users toward action.',
     process: [
       { step: '01', title: 'UX Wireframing', desc: 'Conversion-focused wireframes based on user journey analysis, heatmap data patterns, and CRO best practices before a single line of code.' },
@@ -3154,7 +3154,7 @@ const SERVICE_DETAIL_DATA = [
     tagline: 'Build Community. Drive Virality. Own Attention.',
     color: '#10B981',
     glow: 'rgba(16,185,129,0.25)',
-    img: '/images/3d/services_social_detail.png',
+    img: '/images/3d/services_social_detail.webp',
     overview: 'We create organic growth engines across Meta, TikTok, LinkedIn, and YouTube that build community, authority, and pipeline — not just vanity metrics. Our creative direction combines short-form video storytelling, data-driven posting strategies, and precision community engagement protocols to build a social presence that compounds over time.',
     process: [
       { step: '01', title: 'Brand & Audience Audit', desc: 'Map your current brand voice, analyze audience demographics, competitor content strategies, and identify high-engagement content gaps.' },
@@ -3174,7 +3174,7 @@ const SERVICE_DETAIL_DATA = [
     tagline: 'Turn Data Chaos Into Decision-Ready Clarity.',
     color: '#059669',
     glow: 'rgba(5,150,105,0.25)',
-    img: '/images/3d/services_analytics_detail.png',
+    img: '/images/3d/services_analytics_detail.webp',
     overview: 'We transform fragmented spreadsheets, disconnected databases, and manual reporting into clean, automated analytics pipelines and interactive BI dashboards. From advanced Excel financial models to real-time Power BI and Looker Studio dashboards — we give decision-makers the data clarity they need to move with confidence and speed.',
     process: [
       { step: '01', title: 'Data Audit', desc: 'Inventory all your data sources — CRMs, ad platforms, spreadsheets, databases — and identify integration and automation opportunities.' },
@@ -3194,7 +3194,7 @@ const SERVICE_DETAIL_DATA = [
     tagline: 'Lower CAC. Higher ROAS. Predictable Pipeline.',
     color: '#F59E0B',
     glow: 'rgba(245,158,11,0.25)',
-    img: '/images/3d/seo_growth.png',
+    img: '/images/3d/seo_growth.webp',
     overview: 'We maximize your paid acquisition performance and systematically lower cost-per-acquisition using data-backed Google PPC search, display, Performance Max, and YouTube video campaigns. Every campaign features continuous audience exclusions, strict negative keyword architecture, and rapid creative iteration to keep efficiency high and wasted spend near zero.',
     process: [
       { step: '01', title: 'Account Audit', desc: 'Full review of campaign structure, quality scores, wasted spend patterns, audience segments, and conversion tracking accuracy.' },
@@ -3214,7 +3214,7 @@ const SERVICE_DETAIL_DATA = [
     tagline: 'Total Meta Ecosystem Control. Zero Pixel Leakage.',
     color: '#4F46E5',
     glow: 'rgba(79,70,229,0.25)',
-    img: '/images/3d/social_media.png',
+    img: '/images/3d/social_media.webp',
     overview: 'We establish total coordination of your Meta Business Manager ecosystem — from Pixel architecture and Conversions API setup to catalog synchronization and unified messaging systems. Our Meta setups are built for scale: CAPI-first, privacy-compliant, and engineered to maintain attribution accuracy even in an iOS 14+ world.',
     process: [
       { step: '01', title: 'Business Manager Audit', desc: 'Full audit of current BM structure, ad account health, pixel events, CAPI configuration, and catalog sync issues.' },
@@ -3234,7 +3234,7 @@ const SERVICE_DETAIL_DATA = [
     tagline: 'Words That Rank. Copy That Converts.',
     color: '#EF4444',
     glow: 'rgba(239,68,68,0.25)',
-    img: '/images/3d/team_workflow.png',
+    img: '/images/3d/team_workflow.webp',
     overview: 'We develop cohesive brand narrative frameworks that convert content into pipeline. From SEO-optimized blog clusters that build topical authority to high-conversion landing page copy that closes deals — every piece of content we create is engineered with a clear conversion path, a strong brand voice, and a measurable business objective.',
     process: [
       { step: '01', title: 'Brand Voice Development', desc: 'Define your brand positioning, tone of voice, messaging hierarchy, and unique value propositions in a comprehensive brand bible.' },
@@ -3292,7 +3292,7 @@ const ServicesPage = () => {
   return (
     <div style={{ minHeight: '100vh', paddingTop: 100, position: 'relative', zIndex: 1, overflow: 'hidden' }}>
       {/* Hero Background */}
-      <div className="bg-motion-3d" style={{ position: 'absolute', inset: 0, backgroundImage: "url('/images/3d/services_hero_bg.png')", backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.20, pointerEvents: 'none', zIndex: 0 }} />
+      <div className="bg-motion-3d" style={{ position: 'absolute', inset: 0, backgroundImage: "url('/images/3d/services_hero_bg.webp')", backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.20, pointerEvents: 'none', zIndex: 0 }} />
       <Orbs3D />
 
       {/* ── HERO ─────────────────────────────────────────────── */}
@@ -3315,7 +3315,7 @@ const ServicesPage = () => {
                 <a href="mailto:growthlytics23@gmail.com" className="btn-ghost" style={{ textDecoration: 'none' }}>Get a Free Audit</a>
               </div>
             </div>
-            <TiltImage3D src="/images/3d/services_hero_bg.png" alt="Growthlytics Services" height={460} glow="#06B6D4" />
+            <TiltImage3D src="/images/3d/services_hero_bg.webp" alt="Growthlytics Services" height={460} glow="#06B6D4" />
           </div>
         </div>
       </section>
@@ -3450,7 +3450,7 @@ const ServicesPage = () => {
                 ))}
               </div>
             </div>
-            <TiltImage3D src="/images/3d/why_us_rocket.png" alt="Growthlytics System Workflow" height={480} glow="#8B5AF6" />
+            <TiltImage3D src="/images/3d/why_us_rocket.webp" alt="Growthlytics System Workflow" height={480} glow="#8B5AF6" />
           </div>
         </div>
       </section>
@@ -3709,7 +3709,7 @@ const PrivacyPolicy = () => (
   <div style={{ minHeight: '100vh', padding: '140px 5% 80px', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
     <div className="bg-motion-3d" style={{
       position: 'absolute', inset: 0,
-      backgroundImage: "url('/images/3d/cyber_grid_bg.png')",
+      backgroundImage: "url('/images/3d/cyber_grid_bg.webp')",
       backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.18, pointerEvents: 'none',
       zIndex: 0
     }} />
@@ -3754,6 +3754,18 @@ const NotFound = () => (
    ENTRY POINT & ROUTING
    ============================================================ */
 export default function App() {
+  useEffect(() => {
+    // Preload critical hero images on mount
+    HERO_SLIDES.forEach(slide => {
+      const img = new Image();
+      img.src = slide.image;
+      if (slide.bgPoster) {
+        const bg = new Image();
+        bg.src = slide.bgPoster;
+      }
+    });
+  }, []);
+
   return (
     <BrowserRouter>
       <div style={{ background: '#050508', minHeight: '100vh', overflowX: 'hidden', position: 'relative' }}>
