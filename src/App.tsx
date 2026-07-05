@@ -96,7 +96,7 @@ const SERVICES: Service[] = [
     color: "#06B6D4",
     slug: "seo-optimization",
     img: "/images/3d/services_seo_detail.png",
-    features: ['Technical Core Web Vitals & Crawlability Audits', 'Intent-focused Keyword & Competitor Opportunity Mapping', 'Topic Cluster & Deep Content Semantic Structuring', 'High-Domain Authority White-Hat Link Building Campaigns']
+    features: ['Technical Core Web Vitals & Crawlability Audits', 'Local SEO & SEO Company Kolkata Target Mapping', 'AI SEO Clustering (SaaS SEO & Enterprise SEO)', 'GEO (Generative Engine Optimization) & AEO Setup']
   },
   {
     icon: Cpu,
@@ -105,7 +105,7 @@ const SERVICES: Service[] = [
     color: "#7C3AED",
     slug: "ai-app-development",
     img: "/images/3d/services_ai_detail.png",
-    features: ['Custom LLM Integration (OpenAI, Anthropic, Gemini)', 'Autonomous Agentic Workflow & Process Automation', 'Semantic Search Systems & Vector Databases (Pinecone, PGVector)', 'AI Support Chatbots with Deep Context Memory Retrieval']
+    features: ['AI Automation Services & LLM Integrations', 'Workflow & CRM Automation (WhatsApp Automation)', 'Semantic Search Systems & Vector Databases', 'AI Chatbots with Context Retrieval (AI Content Creation)']
   },
   {
     icon: Code,
@@ -114,7 +114,7 @@ const SERVICES: Service[] = [
     color: "#3B82F6",
     slug: "website-development",
     img: "/images/3d/services_web_detail.png",
-    features: ['React & Next.js Headless SSR/SSG Architectures', 'Sleek TailwindCSS & Custom Glassmorphic Fluid Styling', 'Core Web Vitals Optimization aiming for 99+ Lighthouse Scores', 'Decoupled Headless CMS & Custom Database Schemas']
+    features: ['Website Development Company Kolkata Specialists', 'Responsive Website Design & Fluid Aesthetics', 'WordPress, Shopify & Custom Ecommerce Development', 'Core Web Vitals Optimization (99+ Lighthouse Scores)']
   },
   {
     icon: MessageSquare,
@@ -123,7 +123,7 @@ const SERVICES: Service[] = [
     color: "#10B981",
     slug: "social-media-marketing",
     img: "/images/3d/services_social_detail.png",
-    features: ['Short-Form Video (Reels, TikTok) Creative Direction & Editing', 'LinkedIn Thought Leadership & B2B Editorial Pipelines', 'Active Organic Community Engagement & Growth Strategies', 'Advanced ROI Attribution & Campaign Analytics Syncing']
+    features: ['Meta Ads Kolkata & Reels Marketing Setup', 'LinkedIn Marketing Kolkata & Social Media Marketing', 'Active Organic Community Engagement & Growth Strategies', 'LinkedIn B2B Marketing & Founder Branding Pipelines']
   },
   {
     icon: BarChart3,
@@ -141,7 +141,7 @@ const SERVICES: Service[] = [
     color: "#F59E0B",
     slug: "google-ads-ppc",
     img: "/images/3d/seo_growth.png",
-    features: ['Comprehensive Keyword Bidding & CPC Optimizations', 'Performance Max (PMax) & Advanced Shopping Campaigns', 'Targeted B2B & D2C Search & Display Campaigns', 'Negative Keyword Auditing & Budget Efficiency Monitoring']
+    features: ['Google Ads Kolkata & PPC Search Engine Campaigns', 'Performance Max (PMax) & Google Ads Management Services', 'Targeted B2B & D2C Search & Display Campaigns', 'Negative Keyword Auditing & Budget Efficiency Monitoring']
   },
   {
     icon: Share2,
@@ -159,7 +159,7 @@ const SERVICES: Service[] = [
     color: "#EF4444",
     slug: "content-strategy",
     img: "/images/3d/team_workflow.png",
-    features: ['Conversion-Focused SEO Blog Strategies & Writing', 'Copywriting for High-Converting Core Landing Pages', 'Nurture Sequences & Automated Email Newsletters', 'Detailed Brand Voice Guidelines & Editorial Standard Maps']
+    features: ['AI Content Creation Services & Blog Strategies', 'AI Copywriting for High-Converting Landing Pages', 'Content Marketing & Automated Email Newsletters', 'Detailed Brand Voice Guidelines & Editorial Maps']
   }
 ];
 
@@ -1444,10 +1444,10 @@ const FloatingCTA = () => {
 /* ─── 1. HOME PAGE ────────────────────────────────────────── */
 const HERO_SLIDES = [
   {
-    label: "Data-Driven Growth Engine",
+    label: "AI Digital Marketing Agency India // Active",
     title: "We Turn Data Into",
     titleGradient: "Unstoppable Growth",
-    desc: "An ROI-focused team of real-time problem solvers building intelligent AI solutions, high-performance websites, and comprehensive growth frameworks for scaling brands.",
+    desc: "We are an ROI-focused AI Marketing Agency in India and SEO Company in Kolkata, building custom AI Automation Services, high-performance websites, and growth frameworks for scaling brands.",
     checklist: [
       "Full Asset Ownership: Retain 100% of custom code, databases, and setups.",
       "Privacy-First Attributions: GTM Server-Side and Meta Conversions API integrations.",
@@ -1462,7 +1462,7 @@ const HERO_SLIDES = [
     chips: [
       { label: '↑ 80% Traffic', color: '#06B6D4', top: '10%', left: '-8%', delay: '0.6s' },
       { label: '3.2x ROAS', color: '#7C3AED', bottom: '15%', right: '-6%', delay: '1.2s' },
-      { label: '-15% CAC', color: '#10B981', top: '60%', left: '-12%', delay: '0.9s' }
+      { label: 'Growth Marketing Agency India', color: '#10B981', top: '60%', left: '-12%', delay: '0.9s' }
     ],
     bgPoster: "/images/3d/cyber_grid_bg.png"
   },
